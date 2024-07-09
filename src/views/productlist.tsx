@@ -1,22 +1,38 @@
+"use client"
+
 import React from 'react';
-import Image from 'next/image';
 import { Products } from '@/utils/mock';
-import Productcard from '@/component/productcard'; // Correct import path
+import Productcard from '@/component/productcard';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { StaticImageData } from 'next/image';
 
 export default function Productlist() {
-  const productChunks = Products.slice(0, 3); // Corrected variable name and source
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
+
+  const productChunks = Products.slice(0, 7);
 
   return (
-    <div className='flex justify-evenly'>
+    <div  className='w-1012.67 h-759'>
+    <Slider {...settings}>
       {productChunks.map((product) => (
-        <Productcard 
-          key={product.id} 
-          title={product.name} 
-          price={product.price}
-          image={product.Image} // Correct prop name
-        />
+        <div key={product.id} className='flex p-[64px] '>
+          <Productcard 
+            title={product.name} 
+            price = {product.price }
+           
+            image={product.image as StaticImageData}
+          />
+        </div>
       ))}
-    </div>
-  );
+    </Slider>
+  </div>
+  )
 }
-

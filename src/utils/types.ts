@@ -4,7 +4,8 @@ export interface Product {
     name: string;
     category: string;
     price: number;
-    Image: StaticImageData; // Assuming you're using next/image and StaticImageData type
+    
+    image: string|StaticImageData; // Assuming you're using next/image and StaticImageData type
   }
 
 

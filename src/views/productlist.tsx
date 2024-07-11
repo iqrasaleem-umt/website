@@ -29,6 +29,7 @@ export default function Productlist() {
             price = {product.price }
            
             image={product.image as StaticImageData}
+            id={product.id}
           />
         </div>
       ))}

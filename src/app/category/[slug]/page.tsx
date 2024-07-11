@@ -17,7 +17,8 @@ export default function Page({ params }: { params: { slug: string } }) {
         key={product.id} 
         title={product.name} 
         price={product.price}
-        image={product.image as StaticImageData } // Correct prop name
+        image={product.image as StaticImageData } 
+        id={product.id}// Correct prop name
       />
     )):<p>products not found</p>
   }

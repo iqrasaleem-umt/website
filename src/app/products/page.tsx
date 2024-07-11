@@ -12,6 +12,7 @@ export default function AllProducts() {
           title={product.name} 
           price={product.price}
           image={product.image as StaticImageData } // Correct prop name
+          id={product.id}
         />
       ))}
       

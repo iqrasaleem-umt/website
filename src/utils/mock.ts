@@ -13,6 +13,7 @@ export const Products: Product[] = [
     { 
         id: 1,
         name: "Brushed Reglan Shirt",
+        tagline:"Dress",
         category: "female",
         price: 205,
         image: pic1,
@@ -20,6 +21,7 @@ export const Products: Product[] = [
     { 
         id: 2,
         name: "Cameryn Sash  Dress",
+         tagline:"Dress",
         category: "female",
         price: 280,
         image: pic2,
@@ -27,6 +29,7 @@ export const Products: Product[] = [
     { 
         id: 3,
         name: "Seamless Sweat Shirt",
+         tagline:"Dress",
         category: "female",
         price: 205,
         image: pic3,
@@ -34,6 +37,7 @@ export const Products: Product[] = [
     { 
         id: 4,
         name: "Flex Sweat Shirt",
+         tagline:"Dress",
         category: "female",
         price: 205,
         image: pic4,
@@ -41,6 +45,7 @@ export const Products: Product[] = [
     { 
         id: 5,
         name: "Pink Fleece pants",
+         tagline:"Dress",
         category: "female",
         price: 205,
         image: pic5,
@@ -48,6 +53,7 @@ export const Products: Product[] = [
     { 
         id: 6,
         name: "Lite Sweatpant",
+         tagline:"Dress",
         category: "female",
         price: 205,
         image: pic6,
@@ -55,6 +61,7 @@ export const Products: Product[] = [
     { 
         id: 7,
         name: "Imperial Alpaca Hoodie",
+         tagline:"Dress",
         category: "kids",
         price: 205,
         image: pic7,
@@ -62,6 +69,7 @@ export const Products: Product[] = [
     { 
         id: 8,
         name: "Flex Push Button Bomber",
+         tagline:"Dress",
         category: "male",
         price: 205,
         image: pic8,
@@ -69,6 +77,7 @@ export const Products: Product[] = [
     { 
         id: 9,
         name: "Reglan Sweat Shirt",
+         tagline:"Dress",
         category: "male",
         price: 205,
         image: pic9,

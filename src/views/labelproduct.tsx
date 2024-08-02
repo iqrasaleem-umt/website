@@ -1,44 +1,23 @@
-import React from 'react'
-import Image from 'next/image'
-import picutre from "/public/productpic7.webp"
-export default function LabelProduct() {
-  return (
-    <div>
-    <div className='mt-32 flex justify-end'><h1 className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl">
-    Unique and  <br className='mt-1' />Authentic Vintage <br className='mt-1' /> Designer Jewellery
-  </h1></div>
-  <div className='flex flex-1 mt-10'>
-  <div className=' mx-10'> 
-    <div className=''> 
-      <h2 className='font-bold text-xl'>Using Good <br /> Quality  Materials</h2>
-      <p className='mt-4'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit.</p>
-    </div>
-    <div> 
-      <h2 className='font-bold text-xl mt-14'>Using Good <br /> Quality  Materials</h2>
-      <p className='mt-4'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit.</p>
-    </div>
-    </div>
-    <div className=''>
-    <div> 
-      <h2 className='font-bold text-xl'>Using Good <br /> Quality  Materials</h2>
-      <p className='mt-4'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit.</p>
-    </div>
-    <div> 
-      <h2 className='font-bold text-xl mt-14'>Using Good <br /> Quality  Materials</h2>
-      <p className='mt-4'>Lorem ipsum dolor <br /> sit amt, consectetur <br /> adipiscing elit.</p>
-    </div>
-    </div>
-  
-  <div className='flex  flex-1'>
-  <div className='mx-12'> 
-    <Image src={picutre} alt='photo'/>
+import React from 'react';
+import Image from 'next/image';
+import picture from '/public/productpic7.webp';
 
-  </div>
-  <div className='mx-6 mt-6 text-lg'><p> This piece is ethically <br /> crafted in our small <br /> family-owned workshop <br /> in Peru with unmatched <br /> attention to detail and <br /> care. The Natural color is <br /> the actual natural color  <br /> of the   fiber, undyed  100% traceable.</p> 
-  <button className='bg-black px-2 font-bold mt-12 py-3  text-white'>See ALL  Products</button>
-  </div>
-  </div>
-  </div>
- </div>
-  )
+export default function ProductInfo() {
+  return (
+    <div className="w-full flex flex-col lg:flex-row items-center lg:items-start mt-10 lg:mt-16 px-4 sm:px-8 md:px-16 lg:px-32 ">
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mb-6 lg:mb-0">
+        <Image src={picture} alt="Product Image" className="w-full h-auto max-w-xs sm:max-w-sm lg:max-w-md" />
+      </div>
+      <div className="w-full lg:w-1/2 text-center lg:text-left lg:ml-6">
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-20">
+          This piece is ethically crafted in our small family-owned workshop in Peru with unmatched
+          attention to detail and care. The natural color is the actual natural color of the fiber, undyed
+          and 100% traceable.
+        </p>
+        <button className="bg-black px-6 py-3 mt-6 lg:mt-8 text-white font-bold rounded">
+          See All Products
+        </button>
+      </div>
+    </div>
+  );
 }

@@ -1,18 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-export default function footer() {
+export default function Footer() {
   return (
-   
-    <div className='border-black border-t-2 mt-36 p-7 flex justify-evenlys'>
-    <div className='flex flex-col sm:flex-col lg:flex-row'>
-    <p className='text-lg'>Copyright © 2024 <br />
-    </p>
-    <p> Dine Market</p></div>
-    <span className='text-lg mx-40'> <p> Design by. Weird <br /> Design Studio </p>
-       </span>
-       <div className='text-lg'> <p> Code by <br className='font-semibold' />. iqrasaleemumt batch52 <br /> on github </p>
-       </div>
-    
+    <div className="border-black border-t-2 mt-36 p-7 flex flex-col lg:flex-row justify-between items-center lg:items-start">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <p className="text-lg">Copyright © 2024</p>
+        <p>Dine Market</p>
+      </div>
+      <div className="text-lg text-center lg:text-left my-4 lg:my-0">
+        <p>
+          Design by. Weird <br />
+          Design Studio
+        </p>
+      </div>
+      <div className="text-lg text-center lg:text-left">
+        <p>
+          Code by <br className="lg:hidden" />
+          <span className="font-semibold">iqrasaleem</span> <br />
+          UMT batch52 on GitHub
+        </p>
+      </div>
     </div>
-  )
+  );
 }
